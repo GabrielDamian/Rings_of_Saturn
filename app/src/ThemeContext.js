@@ -1,8 +1,6 @@
-// src/ThemeContext.js
-
 import { createContext } from "react";
-import { theme } from "./theme"; // importă tema definită
+import { theme } from "./theme";
 
-const ThemeContext = createContext(theme); // creează contextul temei, inițializat cu tema definită
+const ThemeContext = createContext(theme);
 
 export default ThemeContext;

@@ -1,0 +1,44 @@
+.logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 16px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333; /* Culoare text primară hardcodată */
+    text-decoration: none;
+  }
+  
+  .iconButton {
+    color: #333; /* Culoare text primară hardcodată */
+    margin-left: auto;
+    display: block;
+  }
+  
+  .menuItem {
+    color: #333; /* Culoare text primară hardcodată */
+  }
+  
+  .desktopNav {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid red;
+  }
+  
+  .desktopNav li a {
+    text-decoration: none;
+    color: #2196f3; /* Culoare primară hardcodată */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .desktopNav li a:hover {
+    color: #f50057; /* Culoare secundară hardcodată */
+  }
+  

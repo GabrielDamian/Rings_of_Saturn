@@ -1,24 +1,36 @@
-// src/components/StyledComponent.js
-
 import React, { useContext } from "react";
 import styled from "styled-components";
-// import ThemeContext from "../ThemeContext"; // importă contextul temei
 import ThemeContext from "../ThemeContext";
+import HeroSection from "@/components/Hero/Hero_1";
+import FadeInSection from "@/saturn/FadeInSection";
 
-const StyledComponent = styled.div`
-  color: ${(props) => props.theme.colors.primary};
-  background-color: ${(props) => props.theme.colors.background};
-  font-family: ${(props) => props.theme.fonts.body};
+const ExampleContainer = styled.div`
+  border: 2px solid ${(props) => props.theme.primaryColor};
+  transform: translateY(-100px);
+  z-index: 1;
 `;
 
 const ExampleComponent = () => {
-  const theme = useContext(ThemeContext); // accesează contextul temei
-
   return (
-    <StyledComponent>
-      <h1 style={{ color: theme.colors.primary }}>Styled Component</h1>
-      <p style={{ fontFamily: theme.fonts.body }}>This is a paragraph using the body font.</p>
-    </StyledComponent>
+    <ExampleContainer>
+      <p style={{ height: "130vh", border: "2px solid blue" }}>test</p>
+      <FadeInSection delay={2}>
+        <HeroSection />
+      </FadeInSection>
+      <FadeInSection>
+        <HeroSection />
+      </FadeInSection>
+      <FadeInSection>
+        <HeroSection />
+      </FadeInSection>
+      <FadeInSection>
+        <HeroSection />
+      </FadeInSection>
+      <FadeInSection>
+        <HeroSection />
+      </FadeInSection>
+      s
+    </ExampleContainer>
   );
 };
 

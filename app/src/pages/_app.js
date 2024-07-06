@@ -2,13 +2,14 @@
 
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { theme } from "../theme"; // verifică că importul este corect
+import BurgerMenu from "../components/Menu/Menu_1/index"; // Importăm componenta pentru meniu
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider theme={theme}>
+    <div>
+      <BurgerMenu />
       <Component {...pageProps} />
-    </ThemeProvider>
+    </div>
   );
 };
 
