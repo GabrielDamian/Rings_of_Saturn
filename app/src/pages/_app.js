@@ -1,14 +1,20 @@
 // src/pages/_app.js
 
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import BurgerMenu from "../components/Menu/Menu_1/index"; // Importăm componenta pentru meniu
+import React, { useState, useEffect } from "react";
+import BurgerMenu from "../components/Menu/Menu_1/index";
+import { theme, flattenObject } from "../theme";
+import "../globals.css";
+import LoadingScreen from "../saturn/LoadingScreen/LoadingScreen";
 
 const MyApp = ({ Component, pageProps }) => {
+  const flattenTheme = flattenObject(theme);
+
   return (
-    <div>
+    <div style={{ ...flattenTheme }}>
       <BurgerMenu />
-      <Component {...pageProps} />
+      <LoadingScreen>
+        <Component {...pageProps} />
+      </LoadingScreen>
     </div>
   );
 };

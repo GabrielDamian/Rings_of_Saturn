@@ -1,13 +1,11 @@
-// components/HeroSection.js
-
 import React, { useState, useEffect } from "react";
-import styles from "./HeroSection.module.css"; // Importul fișierului CSS folosind module CSS
+import styles from "./HeroSection.module.css";
 
 const images = [
   "https://plus.unsplash.com/premium_photo-1717529138029-5b049119cfb1?q=80&w=1297&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1719937075949-83b1f1ee3e42?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1719825718360-7de63c92135f?q=80&w=1321&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-]; // Lista cu adresele imaginilor de fundal
+];
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Indexul imaginii curente
@@ -19,12 +17,12 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Interval de 5 secunde între schimbarea slide-urilor
+    }, 5000);
 
     return () => {
-      clearInterval(interval); // Oprim intervalul când componenta este demontată
+      clearInterval(interval);
     };
-  }, []); // Efectul se activează doar o singură dată la încărcarea componentei
+  }, []);
 
   return (
     <div className={styles.heroSection}>

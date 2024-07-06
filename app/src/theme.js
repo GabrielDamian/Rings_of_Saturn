@@ -1,126 +1,53 @@
-// src/theme.js
-import { createTheme } from "@mui/material/styles";
+export const theme = {
+  colors: {
+    primary: "#0070f3", // culoarea principală a website-ului
+    secondary: "#ff00ff", // o altă culoare secundară
+    background: "#f0f0f0", // culoarea de fundal generală
+    text: "#333333", // culoarea textului principal
+    accent: "#ff6347", // culoarea de accent
+  },
+  fonts: {
+    body: "Arial, sans-serif", // fontul pentru textul principal
+    headings: "Roboto, sans-serif", // fontul pentru titluri și antete
+  },
+  breakpoints: {
+    mobile: "576px", // breakpoint pentru dispozitive mobile
+    tablet: "768px", // breakpoint pentru tablete
+    desktop: "992px", // breakpoint pentru desktop
+  },
+  spacing: {
+    xs: "4px", // spațiere extra mică
+    sm: "8px", // spațiere mică
+    md: "16px", // spațiere medie
+    lg: "24px", // spațiere mare
+    xl: "32px", // spațiere extra mare
+  },
+  borderRadius: {
+    sm: "4px", // colțuri rotunjite mici
+    md: "8px", // colțuri rotunjite medii
+    lg: "12px", // colțuri rotunjite mari
+  },
+  boxShadow: {
+    sm: "0 2px 4px rgba(0, 0, 0, 0.1)", // umbra mică
+    md: "0 4px 8px rgba(0, 0, 0, 0.1)", // umbra medie
+    lg: "0 8px 16px rgba(0, 0, 0, 0.1)", // umbra mare
+  },
+};
 
-// Define the theme
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "red", // Culoare principală
-      light: "magenta", // Culoare deschisă pentru accentuare
-      dark: "blue", // Culoare închisă pentru accentuare
-      contrastText: "green", // Text contrastant pentru culoare principală
-    },
-    secondary: {
-      main: "#f50057", // Culoare secundară
-      light: "#ff5983", // Culoare deschisă pentru accentuare
-      dark: "#c51162", // Culoare închisă pentru accentuare
-      contrastText: "#fff", // Text contrastant pentru culoare secundară
-    },
-    background: {
-      default: "#f8f9fa", // Culoare de fundal implicită
-      paper: "#fff", // Culoare de fundal pentru hârtie (ex: carduri, panouri)
-    },
-    text: {
-      primary: "#333", // Culoare text primar
-      secondary: "#666", // Culoare text secundar
-      disabled: "#ccc", // Culoare text dezactivat
-    },
-    error: {
-      main: "#f44336", // Culoare pentru erori
-    },
-    success: {
-      main: "#4caf50", // Culoare pentru succese
-    },
-    warning: {
-      main: "#ff9800", // Culoare pentru avertizări
-    },
-    info: {
-      main: "#2196f3", // Culoare pentru informații
-    },
-  },
-  typography: {
-    fontFamily: "Roboto, Arial, sans-serif", // Font principal
-    h1: {
-      fontSize: "2.5rem",
-      fontWeight: 700,
-      lineHeight: 1.2,
-      marginBottom: "1.5rem",
-    },
-    h2: {
-      fontSize: "2rem",
-      fontWeight: 600,
-      lineHeight: 1.3,
-      marginBottom: "1.25rem",
-    },
-    h3: {
-      fontSize: "1.75rem",
-      fontWeight: 600,
-      lineHeight: 1.4,
-      marginBottom: "1rem",
-    },
-    h4: {
-      fontSize: "1.5rem",
-      fontWeight: 600,
-      lineHeight: 1.5,
-      marginBottom: "0.75rem",
-    },
-    h5: {
-      fontSize: "1.25rem",
-      fontWeight: 600,
-      lineHeight: 1.6,
-      marginBottom: "0.5rem",
-    },
-    h6: {
-      fontSize: "1rem",
-      fontWeight: 600,
-      lineHeight: 1.7,
-      marginBottom: "0.25rem",
-    },
-    subtitle1: {
-      fontSize: "1rem",
-      fontWeight: 400,
-      lineHeight: 1.8,
-      marginBottom: "0.75rem",
-    },
-    subtitle2: {
-      fontSize: "0.875rem",
-      fontWeight: 400,
-      lineHeight: 1.9,
-      marginBottom: "0.5rem",
-    },
-    body1: {
-      fontSize: "1rem",
-      fontWeight: 400,
-      lineHeight: 1.8,
-      marginBottom: "1rem",
-    },
-    body2: {
-      fontSize: "0.875rem",
-      fontWeight: 400,
-      lineHeight: 1.9,
-      marginBottom: "1rem",
-    },
-    button: {
-      fontSize: "1rem",
-      fontWeight: 600,
-      textTransform: "uppercase",
-    },
-    caption: {
-      fontSize: "0.75rem",
-      fontWeight: 400,
-      lineHeight: 2,
-    },
-    overline: {
-      fontSize: "0.75rem",
-      fontWeight: 600,
-      textTransform: "uppercase",
-      lineHeight: 2,
-    },
-  },
-  shape: {
-    borderRadius: 8, // Bordura de colț pentru componente rotunjite
-  },
-  spacing: 8, // Spațierea implicită între componente (folosită în margini și padding)
-});
+export function flattenObject(obj, parentKey = "", separator = "-") {
+  const flattened = {};
 
-export default theme;
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const newKey = parentKey ? `--${parentKey}${separator}${key}` : key;
+
+      if (typeof obj[key] === "object" && !Array.isArray(obj[key])) {
+        Object.assign(flattened, flattenObject(obj[key], newKey, separator));
+      } else {
+        flattened[newKey] = obj[key];
+      }
+    }
+  }
+
+  return flattened;
+}

@@ -1,19 +1,36 @@
 import React, { useContext } from "react";
-import styled from "styled-components";
-import ThemeContext from "../ThemeContext";
 import HeroSection from "@/components/Hero/Hero_1";
 import FadeInSection from "@/saturn/FadeInSection";
 
-const ExampleContainer = styled.div`
-  border: 2px solid ${(props) => props.theme.primaryColor};
-  transform: translateY(-100px);
-  z-index: 1;
-`;
-
 const ExampleComponent = () => {
   return (
-    <ExampleContainer>
-      <p style={{ height: "130vh", border: "2px solid blue" }}>test</p>
+    <div style={{ marginTop: "10vh" }}>
+      <img
+        src="/images/image1.jpg"
+        alt="magic"
+        style={{ width: "300px", height: "300px", objectFit: "contain" }}
+      />
+      <img
+        src="/images/image1.jpg"
+        alt="magic"
+        style={{ width: "300px", height: "300px", objectFit: "contain" }}
+      />
+      <img
+        src="/images/image1.jpg"
+        alt="magic"
+        style={{ width: "300px", height: "300px", objectFit: "contain" }}
+      />
+      <img
+        src="/images/image1.jpg"
+        alt="magic"
+        style={{ width: "300px", height: "300px", objectFit: "contain" }}
+      />
+      <img
+        src="/images/image1.jpg"
+        alt="magic"
+        style={{ width: "300px", height: "300px", objectFit: "contain" }}
+      />
+
       <FadeInSection delay={2}>
         <HeroSection />
       </FadeInSection>
@@ -29,8 +46,7 @@ const ExampleComponent = () => {
       <FadeInSection>
         <HeroSection />
       </FadeInSection>
-      s
-    </ExampleContainer>
+    </div>
   );
 };
 
