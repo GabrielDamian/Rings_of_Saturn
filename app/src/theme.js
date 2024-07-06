@@ -1,36 +1,36 @@
 export const theme = {
   colors: {
-    primary: "#0070f3", // culoarea principală a website-ului
-    secondary: "#ff00ff", // o altă culoare secundară
-    background: "#f0f0f0", // culoarea de fundal generală
-    text: "#333333", // culoarea textului principal
-    accent: "#ff6347", // culoarea de accent
+    primary: "#0070f3",
+    secondary: "#ff00ff",
+    background: "#f0f0f0",
+    text: "#333333",
+    accent: "#ff6347",
   },
   fonts: {
-    body: "Arial, sans-serif", // fontul pentru textul principal
-    headings: "Roboto, sans-serif", // fontul pentru titluri și antete
+    body: "Arial, sans-serif",
+    headings: "Roboto, sans-serif",
   },
   breakpoints: {
-    mobile: "576px", // breakpoint pentru dispozitive mobile
-    tablet: "768px", // breakpoint pentru tablete
-    desktop: "992px", // breakpoint pentru desktop
+    mobile: "576px",
+    tablet: "768px",
+    desktop: "992px",
   },
   spacing: {
-    xs: "4px", // spațiere extra mică
-    sm: "8px", // spațiere mică
-    md: "16px", // spațiere medie
-    lg: "24px", // spațiere mare
-    xl: "32px", // spațiere extra mare
+    xs: "4px",
+    sm: "8px",
+    md: "16px",
+    lg: "24px",
+    xl: "32px",
   },
   borderRadius: {
-    sm: "4px", // colțuri rotunjite mici
-    md: "8px", // colțuri rotunjite medii
-    lg: "12px", // colțuri rotunjite mari
+    sm: "4px",
+    md: "8px",
+    lg: "12px",
   },
   boxShadow: {
-    sm: "0 2px 4px rgba(0, 0, 0, 0.1)", // umbra mică
-    md: "0 4px 8px rgba(0, 0, 0, 0.1)", // umbra medie
-    lg: "0 8px 16px rgba(0, 0, 0, 0.1)", // umbra mare
+    sm: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    md: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    lg: "0 8px 16px rgba(0, 0, 0, 0.1)",
   },
 };
 
