@@ -8,6 +8,7 @@ import LoadingScreen from "../saturn/LoadingScreen/LoadingScreen";
 
 const MyApp = ({ Component, pageProps }) => {
   const flattenTheme = flattenObject(theme);
+  console.log("flattenTheme:", flattenTheme);
 
   return (
     <div style={{ ...flattenTheme }}>

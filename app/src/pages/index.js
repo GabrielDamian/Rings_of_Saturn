@@ -1,24 +1,16 @@
-import React, { useContext } from "react";
+import React from "react";
 import HeroSection from "@/components/Hero/Hero_1";
 import FadeInSection from "@/saturn/FadeInSection";
+import Section_1 from "@/components/Section/Section_1";
 
 const ExampleComponent = () => {
   return (
-    <div style={{ marginTop: "10vh" }}>
-      <FadeInSection delay={2}>
-        <HeroSection />
-      </FadeInSection>
+    <div>
       <FadeInSection>
         <HeroSection />
       </FadeInSection>
       <FadeInSection>
-        <HeroSection />
-      </FadeInSection>
-      <FadeInSection>
-        <HeroSection />
-      </FadeInSection>
-      <FadeInSection>
-        <HeroSection />
+        <Section_1 />
       </FadeInSection>
     </div>
   );

@@ -1,26 +1,17 @@
 export const theme = {
   colors: {
-    primary: "#0070f3",
-    secondary: "#ff00ff",
-    background: "#f0f0f0",
-    text: "#333333",
-    accent: "#ff6347",
+    bg_1: "#1b1b1b",
+    bg_2: "#222222",
+
+    accent_1: "#6e8086",
+    accent_2: "#ffffff",
+    accent_3: "#aa8453",
+    accent_4: "#e4a853",
+    accent_5: "#aa8453",
   },
   fonts: {
-    body: "Arial, sans-serif",
-    headings: "Roboto, sans-serif",
-  },
-  breakpoints: {
-    mobile: "576px",
-    tablet: "768px",
-    desktop: "992px",
-  },
-  spacing: {
-    xs: "4px",
-    sm: "8px",
-    md: "16px",
-    lg: "24px",
-    xl: "32px",
+    body: "Rubik, sans-serif",
+    headings: "Baskervville SC, sans-serif",
   },
   borderRadius: {
     sm: "4px",

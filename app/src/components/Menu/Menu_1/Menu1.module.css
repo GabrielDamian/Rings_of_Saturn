@@ -6,20 +6,25 @@
     padding-left: 16px;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #333; 
+    color: var(--colors-accent_2);
     text-decoration: none;
+    font-family: var(--fonts-headings);
   }
-  
   .iconButton {
-    color: #333;
+    color: var(--colors-accent_2);
     margin-left: auto;
     display: block;
   }
-  
   .menuItem {
-    color: #333; 
+    color: var(--colors-accent_1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonts-body);
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
   }
-  
   .desktopNav {
     display: flex;
     gap: 24px;
@@ -27,7 +32,6 @@
     margin: 0;
     padding: 0;
   }
-  
   .desktopNav li a {
     text-decoration: none;
     color: #2196f3; 
@@ -35,9 +39,10 @@
     font-weight: 500;
     padding: 12px 16px;
     transition: color 0.3s ease;
+    font-family: var(--fonts-body);
+    color: var(--colors-accent_2);
   }
-  
   .desktopNav li a:hover {
-    color: #f50057;
+    color: var(--colors-accent_4);
   }
   

@@ -18,9 +18,15 @@ const BurgerMenu = () => {
   };
 
   return (
-    <AppBar position="fixed" sx={{ zIndex: 1 }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        borderBottom: "2px solid white",
+        backgroundColor: "transparent",
+      }}
+    >
       <Toolbar>
-        <div className={styles.logo}>Logo</div>
+        <div className={styles.logo}>Casuța Mea</div>
         {isMobile && (
           <IconButton
             className={styles.iconButton}
