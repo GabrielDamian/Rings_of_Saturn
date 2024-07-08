@@ -23,6 +23,7 @@ const BurgerMenu = () => {
       sx={{
         borderBottom: "2px solid white",
         backgroundColor: "transparent",
+        backdropFilter: "blur(2px)",
       }}
     >
       <Toolbar>

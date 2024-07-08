@@ -1,0 +1,52 @@
+.container
+{
+    padding: 40px;
+    background-color: var(--colors-bg_2);
+}
+.header
+{
+
+}
+.header h5
+{
+    font-family: var(--fonts-body);
+    color: var(--colors-accent_4);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.header h1 
+{
+    font-family: var(--fonts-headings);
+    color: var(--colors-accent_2);
+}
+
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+.item
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: 1px solid var(--colors-accent_1);
+}
+.item img 
+{
+    height: 30px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.item p
+{
+    color:  var(--colors-accent_2);
+    font-family: var(--fonts-body);
+}

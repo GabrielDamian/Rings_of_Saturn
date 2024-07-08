@@ -1,0 +1,85 @@
+.container
+{
+    padding: 40px;
+    background-color: var(--colors-accent_2);
+}
+.header
+{
+}
+.header h5
+{
+    font-family: var(--fonts-body);
+    color: var(--colors-accent_4);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.header h1 
+{
+    font-family: var(--fonts-headings);
+    color: var(--colors-bg_2);
+}
+.content 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.item
+{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+}
+.item:hover .core
+{
+    transform: scale(1.1);
+}
+.core 
+{
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    width: 100%;
+}
+.core_deep
+{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+}
+.core_deep:hover 
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.core_deep_text
+{
+    transform: translateY(40px);
+    transition: all 0.3s ease;
+    height: 80px;
+    padding-left: 20px;
+}
+.core_deep_text h3 
+{
+    color: var(--colors-accent_2);
+    height: 40px;
+    font-family: var(--fonts-headings);
+}
+.core_deep_text a 
+{
+    text-decoration: none;
+    height: 40px;
+    color: var(--colors-accent_2);
+    text-transform: uppercase;
+    font-family: var(--fonts-body);
+
+}
+.core_deep:hover .core_deep_text 
+{
+    transform: translateY(0px);
+}

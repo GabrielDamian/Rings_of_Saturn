@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
+import FadeInSection from "@/saturn/FadeInSection";
 
 const HeroSection = () => {
   return (
     <div className={styles.heroSection}>
-      <div className={styles.heroSectionText}>
+      <FadeInSection className={styles.heroSectionText} delay={1.3}>
         <p>Bucurațivă de o experiență unică</p>
-      </div>
-      <div className={styles.heroSectionBtn}>
+      </FadeInSection>
+      <FadeInSection className={styles.heroSectionBtn} delay={1.6}>
         <a href="/">CAMERE ȘI SUITE</a>
-      </div>
+      </FadeInSection>
     </div>
   );
 };
