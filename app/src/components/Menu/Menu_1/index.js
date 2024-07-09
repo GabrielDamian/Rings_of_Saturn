@@ -27,7 +27,9 @@ const BurgerMenu = () => {
       }}
     >
       <Toolbar>
-        <div className={styles.logo}>Casuța Mea</div>
+        <div className={styles.logo}>
+          <a href="/">Casuța Mea</a>
+        </div>
         {isMobile && (
           <IconButton
             className={styles.iconButton}

@@ -1,0 +1,32 @@
+.container
+{
+    height: 50vh;
+    background-image: url('/images/hero_2_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container_layer
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+.container_core
+{
+}
+.container_core h4
+{
+    color: var(--colors-accent_2);
+    font-family: var(--fonts-body);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.container_core h1 
+{
+    color: var(--colors-accent_2);
+    font-family: var(--fonts-headings);
+    font-size: 3rem;
+}

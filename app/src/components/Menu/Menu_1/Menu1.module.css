@@ -10,6 +10,16 @@
     text-decoration: none;
     font-family: var(--fonts-headings);
   }
+.logo a 
+{
+  text-decoration: none;
+  color: var(--colors-accent_2);
+  transition: all 0.3s ease;
+}
+.logo a:hover 
+{
+  transform: scale(1.05);
+}
   .iconButton {
     color: var(--colors-accent_2);
     margin-left: auto;

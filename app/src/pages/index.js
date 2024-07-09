@@ -5,8 +5,9 @@ import Section_1 from "@/components/Section/Section_1";
 import Section_2 from "@/components/Section/Section_2";
 import Section_3 from "@/components/Section/Section_3";
 import Section_4 from "@/components/Section/Section_4";
+import Footer_1 from "@/components/Footer/Footer_1";
 
-const ExampleComponent = () => {
+const RootPage = () => {
   return (
     <div>
       <FadeInSection>
@@ -24,15 +25,11 @@ const ExampleComponent = () => {
       <FadeInSection>
         <Section_4 />
       </FadeInSection>
-      {/* TEST */}
       <FadeInSection>
-        <Section_1 />
-      </FadeInSection>
-      <FadeInSection>
-        <Section_1 />
+        <Footer_1 />
       </FadeInSection>
     </div>
   );
 };
 
-export default ExampleComponent;
+export default RootPage;
