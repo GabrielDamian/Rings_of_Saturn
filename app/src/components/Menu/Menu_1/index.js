@@ -52,6 +52,9 @@ const BurgerMenu = () => {
               <Link href="/rooms">Rooms</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
+              <Link href="/galerie">Galerie</Link>
+            </MenuItem>
+            <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/contact">Contact</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
@@ -69,6 +72,11 @@ const BurgerMenu = () => {
             <li>
               <Link href="/camere" className={styles.navLink}>
                 Camere
+              </Link>
+            </li>
+            <li>
+              <Link href="/galerie" className={styles.navLink}>
+                Galerie
               </Link>
             </li>
             <li>
