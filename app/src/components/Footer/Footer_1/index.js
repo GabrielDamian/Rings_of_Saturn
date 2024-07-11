@@ -1,5 +1,6 @@
 import FadeInSection from "@/saturn/FadeInSection";
 import styles from "./Footer_1.module.css";
+import Link from "next/link";
 
 export default function Footer_1() {
   const siteMap = [
@@ -31,7 +32,7 @@ export default function Footer_1() {
         <div className={styles.container_right_map}>
           <h2>Explore</h2>
           {siteMap.map((el) => {
-            return <a href={el["link"]}>{el["name"]}</a>;
+            return <Link href={el["link"]}>{el["name"]}</Link>;
           })}
         </div>
         <div className={styles.container_right_about}>

@@ -1,5 +1,6 @@
 import FadeInSection from "@/saturn/FadeInSection";
 import styles from "./Section_3.module.css";
+import Link from "next/link";
 
 export default function Section_3() {
   const rooms = [
@@ -38,7 +39,7 @@ export default function Section_3() {
                 <div className={styles.core_deep}>
                   <div className={styles.core_deep_text}>
                     <h3>{el.name}</h3>
-                    <a href={`/${el.link}`}>Detalii</a>
+                    <Link href={`/${el.link}`}>Detalii</Link>
                   </div>
                 </div>
               </div>

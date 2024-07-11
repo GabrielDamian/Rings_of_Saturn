@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 import FadeInSection from "@/saturn/FadeInSection";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -9,7 +10,7 @@ const HeroSection = () => {
         <p>Bucurațivă de o experiență unică</p>
       </FadeInSection>
       <FadeInSection className={styles.heroSectionBtn} delay={1.6}>
-        <a href="/">CAMERE ȘI SUITE</a>
+        <Link href="/">CAMERE ȘI SUITE</Link>
       </FadeInSection>
     </div>
   );

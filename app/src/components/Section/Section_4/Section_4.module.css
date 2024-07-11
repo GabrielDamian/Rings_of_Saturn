@@ -105,9 +105,6 @@
 }
 
 /* React date picker custom */
-.customDatePicker
-{
-}
 .customDatePicker input 
 {
     font-family: var(--fonts-body);

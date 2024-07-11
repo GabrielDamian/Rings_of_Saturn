@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Section_1.module.css";
 import FadeInSection from "@/saturn/FadeInSection";
+import Link from "next/link";
 
 export default function Section_1() {
   return (
@@ -38,7 +39,7 @@ export default function Section_1() {
             </div>
           </div>
           <div className={styles.container_left_action_right}>
-            <a href="/">Vezi mai mult {">>"}</a>
+            <Link href="/">Vezi mai mult {">>"}</Link>
           </div>
         </div>
       </FadeInSection>

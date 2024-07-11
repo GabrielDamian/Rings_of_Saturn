@@ -1,5 +1,6 @@
 import FadeInSection from "@/saturn/FadeInSection";
 import styles from "./Section_5.module.css";
+import Link from "next/link";
 
 export default function Section_5() {
   const rooms = [
@@ -94,7 +95,7 @@ export default function Section_5() {
                 })}
               </div>
               <div className={styles.container_room_left_btn}>
-                <a href="/">Rezeră acum</a>
+                <Link href="/">Rezeră acum</Link>
               </div>
             </div>
             <div
