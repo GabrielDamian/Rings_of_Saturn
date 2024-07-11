@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton, Drawer, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useMediaQuery, useTheme } from "@mui/material";
 import styles from "./Menu1.module.css";
+import Link from "next/link";
 
 const BurgerMenu = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -24,11 +25,12 @@ const BurgerMenu = () => {
         borderBottom: "2px solid white",
         backgroundColor: "transparent",
         backdropFilter: "blur(2px)",
+        backgroundColor: "rgba(0, 0, 0, 0.3)",
       }}
     >
       <Toolbar>
         <div className={styles.logo}>
-          <a href="/">Casuța Mea</a>
+          <Link href="/">Casuța Mea</Link>
         </div>
         {isMobile && (
           <IconButton
@@ -44,40 +46,40 @@ const BurgerMenu = () => {
         <Drawer anchor="top" open={isDrawerOpen} onClose={handleClose}>
           <div role="presentation" onClick={handleClose} onKeyDown={handleClose}>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              Acasă
+              <Link href="/">Acasă</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              Despre
+              <Link href="/rooms">Rooms</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              Servicii
+              <Link href="/contact">Contact</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              Contact
+              <Link href="/test">Not found</Link>
             </MenuItem>
           </div>
         </Drawer>
         {!isMobile && (
           <ul className={styles.desktopNav}>
             <li>
-              <a href="/" className={styles.navLink}>
+              <Link href="/" className={styles.navLink}>
                 Acasă
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className={styles.navLink}>
-                Despre
-              </a>
+              <Link href="/camere" className={styles.navLink}>
+                Camere
+              </Link>
             </li>
             <li>
-              <a href="/" className={styles.navLink}>
-                Servicii
-              </a>
-            </li>
-            <li>
-              <a href="/" className={styles.navLink}>
+              <Link href="/contact" className={styles.navLink}>
                 Contact
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/test" className={styles.navLink}>
+                Not found
+              </Link>
             </li>
           </ul>
         )}

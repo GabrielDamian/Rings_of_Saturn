@@ -35,6 +35,13 @@
     font-size: 1rem;
     text-transform: uppercase;
   }
+  .menuItem a 
+  {
+    color: var(--colors-accent_1);
+    text-decoration: none;
+    font-family: var(--fonts-body);
+    color: red;
+  }
   .desktopNav {
     display: flex;
     gap: 24px;

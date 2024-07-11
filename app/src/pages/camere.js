@@ -6,7 +6,7 @@ export default function Rooms() {
   return (
     <div>
       <FadeInSection>
-        <Hero_2 />
+        <Hero_2 title="KREST RELAXING HEIGHTS" subTitle="Camere" />
       </FadeInSection>
       <Section_5 />
     </div>
