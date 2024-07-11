@@ -103,3 +103,20 @@
     color: var(--colors-accent_4);
     font-family: var(--fonts-body);   
 }
+
+/* React date picker custom */
+.customDatePicker
+{
+}
+.customDatePicker input 
+{
+    font-family: var(--fonts-body);
+    font-size: 1.1rem;
+    width: 100%;
+    background-color: var(--colors-accent_1);
+    color: var(--colors-accent_2);
+    text-align: center;
+    outline: none;
+    border: none;
+    padding: 5px;
+}

@@ -97,6 +97,10 @@ const BurgerMenu = () => {
                 Not found
               </Link>
             </li>
+
+            <Link href="/" className={styles.menuButton}>
+              Rezervă
+            </Link>
           </ul>
         )}
       </Toolbar>
