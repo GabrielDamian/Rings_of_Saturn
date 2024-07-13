@@ -43,7 +43,6 @@ export default function Section_2() {
       </div>
       <div className={styles.content}>
         {facilities.map((el, index) => {
-          console.log("index:", index);
           return (
             <FadeInSection className={styles.item} delay={0.2 * index}>
               <img src={el.icon} />

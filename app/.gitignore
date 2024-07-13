@@ -1,29 +1,20 @@
-# Ignoră node_modules
 node_modules/
 
-# Ignoră fișierele de configurare locale (de exemplu, .env.local)
 .env.local
 
-# Ignoră fișierele de build și cache generate de Next.js
 .next/
 
-# Ignoră fișierele de dependency tree generate
 .yarn/
 
-# Ignoră fișierele de lock pentru dependințe
 yarn.lock
 package-lock.json
 
-# Ignoră fișierele de cache de la eslint
 .cache/
 
-# Ignoră fișierele de log
 *.log
 
-# Ignoră fișierele de imagine cache
 image_cache/
 
-# Ignoră fișierele de distribuție
 .DS_Store
 *.pem
 *.key
