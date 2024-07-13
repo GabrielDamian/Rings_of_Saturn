@@ -39,7 +39,7 @@ export default function Section_1() {
             </div>
           </div>
           <div className={styles.container_left_action_right}>
-            <Link href="/">Vezi mai mult {">>"}</Link>
+            <Link href="/camere">Vezi mai mult {">>"}</Link>
           </div>
         </div>
       </FadeInSection>

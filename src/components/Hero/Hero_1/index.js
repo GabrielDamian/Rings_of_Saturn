@@ -12,7 +12,7 @@ const HeroSection = ({ src }) => {
     <div className={styles.heroSection}>
       <FadeInSection className={styles.heroSectionText} delay={1.3}>
         {/* <p>Bucurațivă de o experiență unică</p> */}
-        <p>{src?.text}</p>
+        <p>{src?.hero_text}</p>
       </FadeInSection>
       <FadeInSection className={styles.heroSectionBtn} delay={1.6}>
         <Link href="/">CAMERE ȘI SUITE</Link>

@@ -43,11 +43,10 @@ const MyApp = ({ Component, pageProps }) => {
 
   const fetchSrc = async () => {
     let websiteIndex = extractSubstringFromURL();
+    websiteIndex = 1; //DEV
     console.log("Extracted website url:", websiteIndex);
-
-    websiteIndex = 1; //DEV MODE
     try {
-      let res = await axios.get(`http://localhost:3000/api/site?id=${websiteIndex}`);
+      let res = await axios.get(`https://saturn-core.vercel.app/api/site?id=${websiteIndex}`);
       setSrc(res.data.data[0]);
     } catch (err) {
       console.log("err", err);

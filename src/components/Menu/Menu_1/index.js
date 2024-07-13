@@ -60,9 +60,6 @@ const BurgerMenu = ({ src }) => {
             <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/contact">Contact</Link>
             </MenuItem>
-            <MenuItem className={styles.menuItem} onClick={handleClose}>
-              <Link href="/test">Not found</Link>
-            </MenuItem>
           </div>
         </Drawer>
         {!isMobile && (
@@ -92,12 +89,6 @@ const BurgerMenu = ({ src }) => {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link href="/test" className={styles.navLink}>
-                Not found
-              </Link>
-            </li>
-
             <Link href="/" className={styles.menuButton}>
               Rezervă
             </Link>

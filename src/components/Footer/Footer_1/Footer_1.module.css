@@ -19,6 +19,25 @@
     color:var(--colors-accent_2);
     font-family: var(--fonts-body);
 }
+.social
+{
+    margin-top: 15px;
+    display: flex;
+}
+.social a 
+{
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+.social a:hover 
+{
+    transform: scale(1.1);
+}
+.social a img 
+{
+    height: 25px;
+    object-fit: contain;
+}
 .container_right 
 {
     display: flex;
@@ -26,6 +45,7 @@
 .container_right_map
 {
     display: flex;
+    width: 200px;
     flex-direction: column;
     margin-right: 40px;
 }
@@ -51,6 +71,7 @@
 .container_right_about
 {
     margin-right: 30px;
+
 }
 .container_right_about h2 
 {

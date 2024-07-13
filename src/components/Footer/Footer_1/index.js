@@ -22,11 +22,37 @@ export default function Footer_1() {
     },
   ];
 
+  const social = [
+    {
+      icon: "/icons/facebook.png",
+      link: "https://www.facebook.com",
+      title: "Facebook",
+    },
+    {
+      icon: "/icons/instagram.png",
+      link: "https://www.instagram.com",
+      title: "Instagram",
+    },
+    {
+      icon: "/icons/youtube.png",
+      link: "https://www.youtube.com",
+      title: "YouTube",
+    },
+  ];
   return (
     <div className={styles.container}>
       <FadeInSection delay={0.3} className={styles.container_left}>
         <h2>Căsuța mea</h2>
         <p>Bucurați-vă de o experiență unică</p>
+        <div className={styles.social}>
+          {social.map((el, index) => {
+            return (
+              <Link href={el.link} key={index}>
+                <img src={el.icon} alt="social" title={el.title} />
+              </Link>
+            );
+          })}
+        </div>
       </FadeInSection>
       <FadeInSection delay={0.6} className={styles.container_right}>
         <div className={styles.container_right_map}>
