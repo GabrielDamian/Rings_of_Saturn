@@ -33,8 +33,6 @@ export default function Section_2() {
     },
   ];
 
-  console.log("test:", styles.item);
-
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -44,7 +42,7 @@ export default function Section_2() {
       <div className={styles.content}>
         {facilities.map((el, index) => {
           return (
-            <FadeInSection className={styles.item} delay={0.2 * index}>
+            <FadeInSection className={styles.item} delay={0.2 * index} key={index}>
               <img src={el.icon} />
               <p>{el.title}</p>
             </FadeInSection>

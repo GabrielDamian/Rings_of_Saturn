@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "@/components/Hero/Hero_1";
 import FadeInSection from "@/saturn/FadeInSection";
 import Section_1 from "@/components/Section/Section_1";
@@ -7,26 +7,27 @@ import Section_3 from "@/components/Section/Section_3";
 import Section_4 from "@/components/Section/Section_4";
 import Footer_1 from "@/components/Footer/Footer_1";
 
-const RootPage = () => {
+const RootPage = ({ src }) => {
+  console.log("index:", src);
   return (
     <div>
       <FadeInSection>
-        <HeroSection />
+        <HeroSection src={src} />
       </FadeInSection>
       <FadeInSection>
-        <Section_1 />
+        <Section_1 src={src} />
       </FadeInSection>
       <FadeInSection>
-        <Section_3 />
+        <Section_3 src={src} />
       </FadeInSection>
       <FadeInSection>
-        <Section_2 />
+        <Section_2 src={src} />
       </FadeInSection>
       <FadeInSection>
-        <Section_4 />
+        <Section_4 src={src} />
       </FadeInSection>
       <FadeInSection>
-        <Footer_1 />
+        <Footer_1 src={src} />
       </FadeInSection>
     </div>
   );

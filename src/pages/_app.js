@@ -8,47 +8,60 @@ import LoadingScreen from "../saturn/LoadingScreen/LoadingScreen";
 import Head from "next/head";
 import axios from "axios";
 
+function extractSubstringFromURL() {
+  var url = window.location.href;
+
+  var startDelimiter = "magnus-";
+  var endDelimiter = "-magic";
+
+  var startIndex = url.indexOf(startDelimiter);
+  if (startIndex === -1) {
+    return null;
+  }
+
+  startIndex += startDelimiter.length;
+
+  var endIndex = url.indexOf(endDelimiter, startIndex);
+  if (endIndex === -1) {
+    return null;
+  }
+
+  var result = url.substring(startIndex, endIndex);
+
+  return result;
+}
+
 const MyApp = ({ Component, pageProps }) => {
   const flattenTheme = flattenObject(theme);
   console.log("flattenTheme:", flattenTheme);
 
-  function extractSubstringFromURL() {
-    var url = window.location.href;
+  const [src, setSrc] = useState(null);
 
-    var startDelimiter = "magnus-";
-    var endDelimiter = "-magic";
-
-    var startIndex = url.indexOf(startDelimiter);
-    if (startIndex === -1) {
-      return null;
-    }
-
-    startIndex += startDelimiter.length;
-
-    var endIndex = url.indexOf(endDelimiter, startIndex);
-    if (endIndex === -1) {
-      return null;
-    }
-
-    var result = url.substring(startIndex, endIndex);
-
-    return result;
-  }
+  useEffect(() => {
+    console.log("_app:", src);
+  }, [src]);
 
   const fetchSrc = async () => {
     let websiteIndex = extractSubstringFromURL();
-    console.log("websiteIndex result:", websiteIndex);
+    console.log("Extracted website url:", websiteIndex);
+
     websiteIndex = 1; //DEV MODE
     try {
       let res = await axios.get(`http://localhost:3000/api/site?id=${websiteIndex}`);
-      console.log("_app:", res.data);
+      setSrc(res.data.data[0]);
     } catch (err) {
       console.log("err", err);
     }
   };
+
   useEffect(() => {
     fetchSrc();
   }, []);
+
+  const customProps = {
+    ...pageProps,
+    src,
+  };
 
   return (
     <>
@@ -63,9 +76,9 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
       <div style={{ ...flattenTheme }}>
-        <BurgerMenu />
-        <LoadingScreen>
-          <Component {...pageProps} />
+        <BurgerMenu src={src} />
+        <LoadingScreen src={src}>
+          <Component {...customProps} />
         </LoadingScreen>
       </div>
     </>

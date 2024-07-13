@@ -29,7 +29,7 @@ export default function Section_3() {
       <div className={styles.content}>
         {rooms.map((el, index) => {
           return (
-            <FadeInSection className={styles.item} delay={0.3 * index}>
+            <FadeInSection className={styles.item} delay={0.3 * index} key={index}>
               <div
                 className={styles.core}
                 style={{
