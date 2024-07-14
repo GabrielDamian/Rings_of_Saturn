@@ -4,13 +4,18 @@ import styles from "./Section_4.module.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function Section_4() {
+export default function Section_4({ src }) {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
   return (
     <div className={styles.container}>
-      <div className={styles.container_top}>
+      <div
+        style={{
+          backgroundImage: `${src ? `url("${src?.parallax_bg_img}")` : ""}`,
+        }}
+        className={styles.container_top}
+      >
         <div className={styles.container_top_core}>
           <div className={styles.container_top_core_header}>
             <h2>Vezi disponibilitatea</h2>
@@ -43,7 +48,7 @@ export default function Section_4() {
           </div>
           <div className={styles.container_bot_core_text}>
             <p>Rezervare</p>
-            <span>+40741092762</span>
+            <span>{src ? `${src?.phone_number}` : "+40741092762"}</span>
           </div>
         </FadeInSection>
       </div>

@@ -3,7 +3,7 @@ import styles from "./Section_1.module.css";
 import FadeInSection from "@/saturn/FadeInSection";
 import Link from "next/link";
 
-export default function Section_1() {
+export default function Section_1({ src }) {
   return (
     <div className={styles.container}>
       <FadeInSection delay={0.3} className={styles.container_left}>
@@ -35,8 +35,18 @@ export default function Section_1() {
         </div>
       </FadeInSection>
       <FadeInSection delay={0.6} className={styles.container_right}>
-        <div className={styles.container_right_first}></div>
-        <div className={styles.container_right_second}></div>
+        <div
+          style={{
+            backgroundImage: `${src ? `url("${src?.section_2_img_1}")` : ""}`,
+          }}
+          className={styles.container_right_first}
+        ></div>
+        <div
+          style={{
+            backgroundImage: `${src ? `url("${src?.section_2_img_2}")` : ""}`,
+          }}
+          className={styles.container_right_second}
+        ></div>
       </FadeInSection>
     </div>
   );

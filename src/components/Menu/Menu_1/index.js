@@ -30,7 +30,7 @@ const BurgerMenu = ({ src }) => {
     >
       <Toolbar>
         <div className={styles.logo}>
-          <Link href="/">Casuța Mea</Link>
+          <Link href="/">{src ? `${src?.website_name}` : "Casuța Mea"}</Link>
         </div>
         {isMobile && (
           <IconButton

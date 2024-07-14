@@ -43,7 +43,7 @@ const MyApp = ({ Component, pageProps }) => {
 
   const fetchSrc = async () => {
     let websiteIndex = extractSubstringFromURL();
-    websiteIndex = 1; //DEV
+    // websiteIndex = 1; //DEV
     console.log("Extracted website url:", websiteIndex);
     try {
       let res = await axios.get(`https://saturn-core.vercel.app/api/site?id=${websiteIndex}`);
@@ -76,7 +76,7 @@ const MyApp = ({ Component, pageProps }) => {
       </Head>
       <div style={{ ...flattenTheme, minWidth: "370px" }}>
         <BurgerMenu src={src} />
-        <LoadingScreen src={src}>
+        <LoadingScreen>
           <Component {...customProps} />
         </LoadingScreen>
       </div>

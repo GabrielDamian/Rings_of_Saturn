@@ -4,10 +4,19 @@ import FadeInSection from "@/saturn/FadeInSection";
 import Link from "next/link";
 
 const HeroSection = ({ src }) => {
+  useEffect(() => {
+    console.log("HERO SECTION:", src);
+  }, [src]);
+
   return (
-    <div className={styles.heroSection}>
+    <div
+      className={styles.heroSection}
+      style={{
+        backgroundImage: `${src ? `url("${src?.hero_img}")` : ""}`,
+      }}
+    >
       <FadeInSection className={styles.heroSectionText} delay={1.3}>
-        <p>Bucurațivă de o experiență unică</p>
+        <p>{src ? `${src?.hero_text}` : "Bucurațivă de o experiență unică"}</p>
       </FadeInSection>
       <FadeInSection className={styles.heroSectionBtn} delay={1.6}>
         <Link href="/camere">CAMERE ȘI SUITE</Link>

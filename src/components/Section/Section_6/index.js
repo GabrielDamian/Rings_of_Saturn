@@ -1,24 +1,28 @@
 import FadeInSection from "@/saturn/FadeInSection";
 import styles from "./Section_6.module.css";
 
-export default function Section_6() {
-  const items = [
-    {
-      name: "Rezervare",
-      value: "+40741092762",
-      icon: "/icons/phone.png",
-    },
-    {
-      name: "Email",
-      value: "stay@krest.ro",
-      icon: "/icons/mail.png",
-    },
-    {
-      name: "Adresa",
-      value: "Str Telefericului, nr 12 <br/>Vatra Dornei, Suceava",
-      icon: "/icons/map.png",
-    },
-  ];
+export default function Section_6({ src }) {
+  const generateItems = (srcParam) => {
+    const items = [
+      {
+        name: "Rezervare",
+        value: src ? `${src?.phone_number}` : "+40741092762",
+        icon: "/icons/phone.png",
+      },
+      {
+        name: "Email",
+        value: src ? `${src?.email}` : "stay@krest.ro",
+        icon: "/icons/mail.png",
+      },
+      {
+        name: "Adresa",
+        value: src ? `${src?.address}` : "Str Telefericului, nr 12 <br/>Vatra Dornei, Suceava",
+        icon: "/icons/map.png",
+      },
+    ];
+
+    return items;
+  };
   return (
     <div className={styles.container}>
       <div className={styles.container_left}>
@@ -26,7 +30,7 @@ export default function Section_6() {
           <h2>Krest Relaxing Heights</h2>
         </div>
         <div className={styles.container_left_content}>
-          {items.map((el, index) => {
+          {generateItems().map((el, index) => {
             return (
               <FadeInSection className={styles.item} delay={0.5 * index}>
                 <div className={styles.item_img}>
