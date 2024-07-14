@@ -49,7 +49,7 @@ const BurgerMenu = ({ src }) => {
               <Link href="/">Acasă</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              <Link href="/rooms">Rooms</Link>
+              <Link href="/camere">Rooms</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/galerie">Galerie</Link>

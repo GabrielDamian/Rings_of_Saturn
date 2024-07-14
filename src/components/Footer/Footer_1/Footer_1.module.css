@@ -88,3 +88,46 @@
     transition: all 0.3s ease;
     font-size: 0.8rem;
 }
+
+/* MOBILE */
+@media only screen and (max-width: 850px)
+{
+.container
+{
+    padding: 15px 25px;
+}
+}
+@media only screen and (max-width: 600px)
+{
+.container
+{
+    padding: 10px 15px;
+}
+.container_right_map
+{
+    width: 50%;
+}
+.container_right_about
+{
+    width: 50%;
+}
+}
+@media only screen and (max-width: 450px)
+{
+.container
+{
+    flex-direction: column;
+}
+.container_left
+{
+    margin-bottom: 20px;
+}
+.container_right_map
+{
+    margin-right: 15px;
+}
+.container_right_about
+{
+    margin-right: 0px;
+}
+}

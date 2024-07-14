@@ -117,3 +117,32 @@
     border: none;
     padding: 5px;
 }
+
+/* MOBILE */
+@media only screen and (max-width: 750px)
+{
+.container_top
+{
+    padding-right: 30px;
+}
+.container_bot
+{
+    padding-left: 30px;
+}
+}
+@media only screen and (max-width: 550px)
+{
+.container_top
+{
+    justify-content: center;
+    padding-right: 0px;
+}
+.container_top_core
+{
+    transform: translateY(30px);
+}    
+.container_bot
+{
+    height: 150px;
+}
+}

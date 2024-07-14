@@ -9,9 +9,7 @@ export default function Activtitati() {
       <FadeInSection>
         <Hero_2 title="Ce poți face în zona noastră" subTitle="Activități" />
       </FadeInSection>
-      <FadeInSection>
-        <Section_8 />
-      </FadeInSection>
+      <Section_8 />
       <FadeInSection>
         <Footer_1 />
       </FadeInSection>

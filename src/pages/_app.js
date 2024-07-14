@@ -74,7 +74,7 @@ const MyApp = ({ Component, pageProps }) => {
           href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         />
       </Head>
-      <div style={{ ...flattenTheme }}>
+      <div style={{ ...flattenTheme, minWidth: "370px" }}>
         <BurgerMenu src={src} />
         <LoadingScreen src={src}>
           <Component {...customProps} />

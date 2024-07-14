@@ -1,6 +1,6 @@
 .container
 {
-    padding: 20px;
+    padding: 30px;
     background-color: var(--colors-bg_1);
 }
 .container_room
@@ -43,8 +43,10 @@
 .container_room_left_facilities_item
 {
     display: flex;
+    align-items: center;
     width: 50%;
     margin-bottom: 10px;
+    height: 50px;
 }
 .container_room_left_facilities_item img 
 {
@@ -86,4 +88,48 @@
     background-size: cover;
     background-position: center;
     height: 400px;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1100px)
+{
+.container_room_left
+{
+    width: 60%;
+    transform: translateX(20px);
+}
+}
+@media only screen and (max-width: 600px)
+{
+.container
+{
+    padding: 15px;
+}
+.container_room_left
+{
+    padding: 15px;
+}
+.container_room_left_facilities_item
+{
+    font-size: 0.8rem;
+}
+}
+@media only screen and (max-width: 450px)
+{
+.container_room
+{
+    flex-direction: column;
+}
+.container_room_left
+{
+    width: 100%;
+    transform: translateX(0px);
+    margin-bottom: 20px;
+}
+.container_room_right 
+{
+    width: 100%;
+    height: 250px;
+
+}
 }

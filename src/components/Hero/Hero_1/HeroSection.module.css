@@ -6,11 +6,12 @@
   background-position: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .heroSectionText
 {
-  height: 60%;
+  height: 50%;
   width: 50%;
   color: var(--colors-accent_2);
   font-family: var(--fonts-headings);
@@ -23,7 +24,7 @@
 }
 .heroSectionBtn
 {
-  height: 30%;
+  height: 20%;
   padding: 20px;
   margin-top: 20px;
   transition: all 0.3s ease;
@@ -43,3 +44,22 @@
   background-color: var(--colors-accent_2);
   color: var(--colors-accent_0);
 }
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+.heroSectionText
+{
+  font-size: 3rem;
+  width: 90%;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.heroSectionText
+{
+  font-size: 2rem;
+  width: 90%;
+  height: 30%;
+}
+}
+

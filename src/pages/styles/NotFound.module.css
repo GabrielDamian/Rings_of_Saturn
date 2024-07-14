@@ -24,3 +24,19 @@
     font-family: var(--fonts-body);
     font-size: 1.4rem;
 }
+/* MOBILE */
+@media only screen and (max-width: 480px)
+{
+.core
+{
+    width: 80%;
+}
+.core h1
+{
+    font-size: 2.5rem;
+}
+.core p 
+{
+    font-size: 1.1rem;
+}
+}

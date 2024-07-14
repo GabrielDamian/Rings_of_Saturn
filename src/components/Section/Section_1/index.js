@@ -6,16 +6,7 @@ import Link from "next/link";
 export default function Section_1() {
   return (
     <div className={styles.container}>
-      <FadeInSection
-        delay={0.3}
-        style={{
-          width: "50%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <FadeInSection delay={0.3} className={styles.container_left}>
         <div className={styles.container_left_header}>
           <h5>KREST RELAXING HEIGHTS</h5>
         </div>
@@ -43,15 +34,7 @@ export default function Section_1() {
           </div>
         </div>
       </FadeInSection>
-      <FadeInSection
-        delay={0.6}
-        style={{
-          width: "50%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-around",
-        }}
-      >
+      <FadeInSection delay={0.6} className={styles.container_right}>
         <div className={styles.container_right_first}></div>
         <div className={styles.container_right_second}></div>
       </FadeInSection>

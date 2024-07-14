@@ -33,6 +33,7 @@
 .item
 {
     padding: 20px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,4 +50,22 @@
 {
     color:  var(--colors-accent_2);
     font-family: var(--fonts-body);
+}
+
+/* MOBILE */
+@media only screen and (max-width: 520px)
+{
+.container
+{
+    padding: 20px;
+}
+.content
+{
+    padding-top: 30px;
+}
+.item 
+{
+    width: 45%;
+}
+
 }

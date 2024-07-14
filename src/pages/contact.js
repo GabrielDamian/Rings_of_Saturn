@@ -9,9 +9,7 @@ export default function Contact() {
       <FadeInSection>
         <Hero_2 title="Ia legătura cu noi" subTitle="Contact" />
       </FadeInSection>
-      <FadeInSection>
-        <Section_6 />
-      </FadeInSection>
+      <Section_6 />
       <FadeInSection>
         <Footer_1 />
       </FadeInSection>

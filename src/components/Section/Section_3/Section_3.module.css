@@ -14,10 +14,11 @@
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-.header h1 
+.header h3
 {
     font-family: var(--fonts-headings);
     color: var(--colors-bg_2);
+    text-decoration: none;
 }
 .content 
 {
@@ -82,4 +83,30 @@
 .core_deep:hover .core_deep_text 
 {
     transform: translateY(0px);
+}
+
+/* MOBILE */
+@media only screen and (max-width: 650px) {
+.container
+{
+    padding: 20px;
+}
+.item
+{
+    width: 30%;
+}
+}
+
+@media only screen and (max-width: 450px)
+{
+.content
+{
+   flex-direction: column;
+   align-items: center;
+}
+.item 
+{
+    width: 90%;
+    margin-bottom: 20px;
+}
 }

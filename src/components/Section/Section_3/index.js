@@ -24,7 +24,7 @@ export default function Section_3() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h5>KREST RELAXING HEIGHTS</h5>
-        <h1>Camere și suite</h1>
+        <h3>Camere și suite</h3>
       </div>
       <div className={styles.content}>
         {rooms.map((el, index) => {
