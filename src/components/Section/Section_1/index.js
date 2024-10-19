@@ -8,15 +8,16 @@ export default function Section_1({ src }) {
     <div className={styles.container}>
       <FadeInSection delay={0.3} className={styles.container_left}>
         <div className={styles.container_left_header}>
-          <h5>KREST RELAXING HEIGHTS</h5>
+          <h5>{src ? `${src?.website_name}` : "Casuța Mea"}</h5>
         </div>
         <div className={styles.container_left_title}>
           <h2>Bucurați-vă de o experiență unică</h2>
         </div>
         <div className={styles.container_left_text}>
           <p>
-            În inima Bucovinei de munte, în Vatra Dornei, înconjurați de natură, însă foarte aproape
-            de micile plăceri ale traiului urban, am creat Krest. Relaxing Heights.
+            Înconjurată de peisaje montane impresionante, pensiunea noastră este locul ideal pentru
+            a te retrage departe de agitația cotidiană. Aici, natura este la ea acasă, iar tu poți
+            să te bucuri de liniștea oferită de munți și de aerul proaspăt.
           </p>
         </div>
         <div className={styles.container_left_action}>

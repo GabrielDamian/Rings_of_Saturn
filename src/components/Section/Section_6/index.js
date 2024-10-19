@@ -11,7 +11,7 @@ export default function Section_6({ src }) {
       },
       {
         name: "Email",
-        value: src ? `${src?.email}` : "stay@krest.ro",
+        value: src ? `${src?.email}` : "stay@casutamea.ro",
         icon: "/icons/mail.png",
       },
       {
@@ -27,7 +27,7 @@ export default function Section_6({ src }) {
     <div className={styles.container}>
       <div className={styles.container_left}>
         <div className={styles.container_left_head}>
-          <h2>Krest Relaxing Heights</h2>
+          <h2>{src ? `${src?.website_name}` : "Casuța Mea"}</h2>
         </div>
         <div className={styles.container_left_content}>
           {generateItems().map((el, index) => {

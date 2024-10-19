@@ -16,10 +16,11 @@ const HeroSection = ({ src }) => {
       }}
     >
       <FadeInSection className={styles.heroSectionText} delay={1.3}>
-        <p>{src ? `${src?.hero_text}` : "Bucurațivă de o experiență unică"}</p>
+        {/* <p>{src ? `${src?.hero_text}` : }</p> */}
+        <p>"Bucurați-vă de o experiență unică"</p>
       </FadeInSection>
       <FadeInSection className={styles.heroSectionBtn} delay={1.6}>
-        <Link href="/camere">CAMERE ȘI SUITE</Link>
+        <Link href="/camere">DESCOPERĂ</Link>
       </FadeInSection>
     </div>
   );

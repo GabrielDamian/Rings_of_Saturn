@@ -22,6 +22,10 @@
   justify-content: center;
   text-align: center;
 }
+.heroSection p 
+{
+  background-color: rgba(204, 204, 204, 0.8);
+}
 .heroSectionBtn
 {
   height: 20%;
@@ -32,17 +36,18 @@
 .heroSectionBtn a 
 {
   text-decoration: none;
-  color: var(--colors-accent_2);
   font-weight: bold;
   padding: 20px 30px;
   border: 2px solid var(--colors-accent_2);
   font-family: var(--fonts-headings);
   transition: all 0.3s ease;
+  background-color: var(--colors-accent_2);
+  color: var(--colors-accent_0);
 }
 .heroSectionBtn a:hover
 {
-  background-color: var(--colors-accent_2);
-  color: var(--colors-accent_0);
+  background-color: transparent;
+  color: var(--colors-accent_2);
 }
 
 /* MOBILE */

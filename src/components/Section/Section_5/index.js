@@ -6,7 +6,7 @@ export default function Section_5({ src }) {
   const generateRooms = (srcParam) => {
     const rooms = [
       {
-        name: src ? `${src?.room_1_name}` : "Krest 1",
+        name: src ? `${src?.room_1_name}` : "Camera 1",
         desc: "Capacitate maximă de 6 persoane, 2 camere matrimoniale și 2 băi cu duș, canapea extensibilă în zona ...",
         img: src ? `${src?.room_1_img}` : "/images/Section_5.jpg",
         features: [
@@ -29,7 +29,7 @@ export default function Section_5({ src }) {
         ],
       },
       {
-        name: src ? `${src?.room_2_name}` : "Krest 2",
+        name: src ? `${src?.room_2_name}` : "Camera 2",
         desc: "Capacitate maximă de 6 persoane, 2 camere matrimoniale și 2 băi cu duș, canapea extensibilă în zona ...",
         img: src ? `${src?.room_2_img}` : "/images/Section_5.jpg",
         features: [
@@ -52,7 +52,7 @@ export default function Section_5({ src }) {
         ],
       },
       {
-        name: src ? `${src?.room_3_name}` : "Krest 3",
+        name: src ? `${src?.room_3_name}` : "Camera 3",
         desc: "Capacitate maximă de 6 persoane, 2 camere matrimoniale și 2 băi cu duș, canapea extensibilă în zona ...",
         img: src ? `${src?.room_3_img}` : "/images/Section_5.jpg",
         features: [

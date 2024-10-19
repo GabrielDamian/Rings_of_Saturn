@@ -7,7 +7,7 @@ export default function Rooms({ src }) {
   return (
     <div>
       <FadeInSection>
-        <Hero_2 title="KREST RELAXING HEIGHTS" subTitle="Camere" src={src} />
+        <Hero_2 title={src ? `${src?.website_name}` : "Casuța Mea"} subTitle="Camere" src={src} />
       </FadeInSection>
       <Section_5 src={src} />
       <FadeInSection>

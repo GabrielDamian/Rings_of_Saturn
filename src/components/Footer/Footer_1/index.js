@@ -57,7 +57,7 @@ export default function Footer_1({ src }) {
       </FadeInSection>
       <FadeInSection delay={0.6} className={styles.container_right}>
         <div className={styles.container_right_map}>
-          <h2>Explore</h2>
+          <h2>Explorează</h2>
           {siteMap.map((el, index) => {
             return (
               <Link href={el["link"]} key={index}>

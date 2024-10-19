@@ -36,7 +36,15 @@ export default function Section_4({ src }) {
               />
             </div>
             <FadeInSection delay={0.3} className={styles.container_top_cor_form_submit_wrap}>
-              <button className={styles.container_top_cor_form_submit}>Verifică</button>
+              <button
+                className={styles.container_top_cor_form_submit}
+                onClick={() => {
+                  let target_platform = src["hero_text"];
+                  window.location.href = target_platform;
+                }}
+              >
+                Verifică
+              </button>
             </FadeInSection>
           </div>
         </div>

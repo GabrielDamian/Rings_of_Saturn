@@ -16,20 +16,20 @@ export default function Section_2() {
       title: "Permis animale",
     },
     {
-      icon: "/icons/car.png",
-      title: "Parcare gratuită",
+      icon: "/icons/sauna.png",
+      title: "Saună",
     },
     {
-      icon: "/icons/car.png",
-      title: "Parcare gratuită",
+      icon: "/icons/spa.png",
+      title: "Spa",
     },
     {
-      icon: "/icons/car.png",
-      title: "Parcare gratuită",
+      icon: "/icons/lounge.png",
+      title: "Bar",
     },
     {
-      icon: "/icons/car.png",
-      title: "Parcare gratuită",
+      icon: "/icons/jacuzzi.png",
+      title: "Jacuzzi",
     },
   ];
 
